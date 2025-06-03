@@ -1,5 +1,6 @@
 
 import { Star, Quote } from 'lucide-react';
+import AnimatedCounter from './AnimatedCounter';
 
 const Testimonials = () => {
   const testimonials = [
@@ -82,15 +83,21 @@ const Testimonials = () => {
         <div className="text-center mt-12">
           <div className="inline-flex items-center space-x-8 text-gray-600">
             <div className="text-center">
-              <div className="font-bebas text-3xl text-martial-red">4.9/5</div>
+              <div className="font-bebas text-3xl text-martial-red">
+                <AnimatedCounter end={4.9} suffix="/5" prefix="" />
+              </div>
               <div className="text-sm">Average Rating</div>
             </div>
             <div className="text-center">
-              <div className="font-bebas text-3xl text-martial-red">200+</div>
+              <div className="font-bebas text-3xl text-martial-red">
+                <AnimatedCounter end={200} suffix="+" />
+              </div>
               <div className="text-sm">Happy Reviews</div>
             </div>
             <div className="text-center">
-              <div className="font-bebas text-3xl text-martial-red">98%</div>
+              <div className="font-bebas text-3xl text-martial-red">
+                <AnimatedCounter end={98} suffix="%" />
+              </div>
               <div className="text-sm">Student Retention</div>
             </div>
           </div>

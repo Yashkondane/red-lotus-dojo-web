@@ -1,6 +1,7 @@
 
 import { ArrowRight, Play } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import AnimatedCounter from './AnimatedCounter';
 
 const Hero = () => {
   return (
@@ -44,18 +45,24 @@ const Hero = () => {
             </button>
           </div>
           
-          {/* Stats */}
+          {/* Stats with animated counters */}
           <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto">
             <div className="text-center">
-              <div className="font-bebas text-3xl md:text-4xl text-white">500+</div>
+              <div className="font-bebas text-3xl md:text-4xl text-white">
+                <AnimatedCounter end={500} suffix="+" />
+              </div>
               <div className="text-gray-300 text-sm uppercase tracking-wide">Students</div>
             </div>
             <div className="text-center">
-              <div className="font-bebas text-3xl md:text-4xl text-white">15+</div>
+              <div className="font-bebas text-3xl md:text-4xl text-white">
+                <AnimatedCounter end={15} suffix="+" />
+              </div>
               <div className="text-gray-300 text-sm uppercase tracking-wide">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="font-bebas text-3xl md:text-4xl text-white">10+</div>
+              <div className="font-bebas text-3xl md:text-4xl text-white">
+                <AnimatedCounter end={10} suffix="+" />
+              </div>
               <div className="text-gray-300 text-sm uppercase tracking-wide">Expert Instructors</div>
             </div>
           </div>

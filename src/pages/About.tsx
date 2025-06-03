@@ -1,5 +1,5 @@
-
 import { Users, Award, Target, Heart } from 'lucide-react';
+import AnimatedCounter from '@/components/AnimatedCounter';
 
 const About = () => {
   const values = [
@@ -171,24 +171,32 @@ const About = () => {
         </div>
       </section>
 
-      {/* Stats Section */}
+      {/* Stats Section with animated counters */}
       <section className="py-20 bg-martial-red">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="animate-fade-in">
-              <div className="font-bebas text-4xl md:text-5xl text-white mb-2">15+</div>
+              <div className="font-bebas text-4xl md:text-5xl text-white mb-2">
+                <AnimatedCounter end={15} suffix="+" />
+              </div>
               <div className="text-red-100 uppercase tracking-wide">Years of Excellence</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '200ms' }}>
-              <div className="font-bebas text-4xl md:text-5xl text-white mb-2">500+</div>
+              <div className="font-bebas text-4xl md:text-5xl text-white mb-2">
+                <AnimatedCounter end={500} suffix="+" />
+              </div>
               <div className="text-red-100 uppercase tracking-wide">Active Students</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '400ms' }}>
-              <div className="font-bebas text-4xl md:text-5xl text-white mb-2">50+</div>
+              <div className="font-bebas text-4xl md:text-5xl text-white mb-2">
+                <AnimatedCounter end={50} suffix="+" />
+              </div>
               <div className="text-red-100 uppercase tracking-wide">Tournament Wins</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '600ms' }}>
-              <div className="font-bebas text-4xl md:text-5xl text-white mb-2">10+</div>
+              <div className="font-bebas text-4xl md:text-5xl text-white mb-2">
+                <AnimatedCounter end={10} suffix="+" />
+              </div>
               <div className="text-red-100 uppercase tracking-wide">Expert Instructors</div>
             </div>
           </div>
