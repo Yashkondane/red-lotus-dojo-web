@@ -5,7 +5,7 @@ import AnimatedCounter from './AnimatedCounter';
 const StudentAchievements = () => {
   const achievements = [
     {
-      name: 'Sarah Kim',
+      name: 'Priya Sharma',
       achievement: 'National Championship Winner',
       category: 'Youth Division',
       year: '2024',
@@ -13,7 +13,7 @@ const StudentAchievements = () => {
       medal: 'gold'
     },
     {
-      name: 'Marcus Chen',
+      name: 'Arjun Patel',
       achievement: 'Regional Tournament Champion',
       category: 'Adult Division',
       year: '2024',
@@ -21,7 +21,7 @@ const StudentAchievements = () => {
       medal: 'gold'
     },
     {
-      name: 'Emma Rodriguez',
+      name: 'Kavya Reddy',
       achievement: 'State Championship',
       category: 'Junior Division',
       year: '2024',
@@ -29,7 +29,7 @@ const StudentAchievements = () => {
       medal: 'silver'
     },
     {
-      name: 'David Park',
+      name: 'Rohit Singh',
       achievement: 'Black Belt Achievement',
       category: 'Youngest Student',
       year: '2024',
@@ -51,10 +51,10 @@ const StudentAchievements = () => {
     <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-bebas text-4xl md:text-5xl text-martial-red mb-4 tracking-wider">
+          <h2 className="font-bebas text-4xl md:text-5xl text-martial-red mb-4 tracking-wider animate-fade-in">
             STUDENT ACHIEVEMENTS
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '200ms' }}>
             Celebrating the incredible accomplishments of our dedicated students
           </p>
         </div>
@@ -94,25 +94,25 @@ const StudentAchievements = () => {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div className="animate-fade-in">
               <div className="font-bebas text-3xl md:text-4xl text-white mb-2">
-                <AnimatedCounter end={25} suffix="+" />
+                <AnimatedCounter end={30} suffix="+" />
               </div>
               <div className="text-red-100 text-sm uppercase tracking-wide">Tournament Wins</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '200ms' }}>
               <div className="font-bebas text-3xl md:text-4xl text-white mb-2">
-                <AnimatedCounter end={8} suffix="" />
+                <AnimatedCounter end={12} suffix="" />
               </div>
               <div className="text-red-100 text-sm uppercase tracking-wide">National Champions</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '400ms' }}>
               <div className="font-bebas text-3xl md:text-4xl text-white mb-2">
-                <AnimatedCounter end={100} suffix="+" />
+                <AnimatedCounter end={150} suffix="+" />
               </div>
               <div className="text-red-100 text-sm uppercase tracking-wide">Black Belts Earned</div>
             </div>
             <div className="animate-fade-in" style={{ animationDelay: '600ms' }}>
               <div className="font-bebas text-3xl md:text-4xl text-white mb-2">
-                <AnimatedCounter end={15} suffix="+" />
+                <AnimatedCounter end={18} suffix="+" />
               </div>
               <div className="text-red-100 text-sm uppercase tracking-wide">Years of Excellence</div>
             </div>

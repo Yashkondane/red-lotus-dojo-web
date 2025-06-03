@@ -5,28 +5,28 @@ import AnimatedCounter from './AnimatedCounter';
 const Testimonials = () => {
   const testimonials = [
     {
-      name: 'Sarah Johnson',
+      name: 'Sunita Agarwal',
       role: 'Parent',
       content: 'My daughter has been training here for 2 years and the transformation is incredible. Not only has she learned self-defense, but her confidence and discipline have improved dramatically.',
       rating: 5,
       image: 'https://images.unsplash.com/photo-1494790108755-2616b612b830?auto=format&fit=crop&w=150&h=150&q=80'
     },
     {
-      name: 'Mike Chen',
+      name: 'Vikram Joshi',
       role: 'Adult Student',
       content: 'As an adult beginner, I was nervous about starting martial arts. The instructors here are patient, knowledgeable, and make every class enjoyable. Best decision I ever made.',
       rating: 5,
       image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=150&h=150&q=80'
     },
     {
-      name: 'Emma Rodriguez',
+      name: 'Ananya Gupta',
       role: 'Competitive Fighter',
       content: 'The competition team training here is world-class. I have won multiple tournaments thanks to the excellent coaching and supportive community at Elite Martial Arts.',
       rating: 5,
       image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&h=150&q=80'
     },
     {
-      name: 'David Park',
+      name: 'Aryan Malik',
       role: 'Youth Student',
       content: 'Training here has helped me focus better in school and made me more confident. The instructors are awesome and make learning fun!',
       rating: 5,
@@ -38,10 +38,10 @@ const Testimonials = () => {
     <section className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="font-bebas text-4xl md:text-5xl text-martial-red mb-4 tracking-wider">
+          <h2 className="font-bebas text-4xl md:text-5xl text-martial-red mb-4 tracking-wider animate-fade-in">
             STUDENT TESTIMONIALS
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-in" style={{ animationDelay: '200ms' }}>
             Hear from our students and their families about their transformative journey with us
           </p>
         </div>
@@ -80,23 +80,23 @@ const Testimonials = () => {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-12 animate-fade-in" style={{ animationDelay: '800ms' }}>
           <div className="inline-flex items-center space-x-8 text-gray-600">
             <div className="text-center">
               <div className="font-bebas text-3xl text-martial-red">
-                <AnimatedCounter end={4.9} suffix="/5" prefix="" />
+                <AnimatedCounter end={4.8} suffix="/5" prefix="" />
               </div>
               <div className="text-sm">Average Rating</div>
             </div>
             <div className="text-center">
               <div className="font-bebas text-3xl text-martial-red">
-                <AnimatedCounter end={200} suffix="+" />
+                <AnimatedCounter end={250} suffix="+" />
               </div>
               <div className="text-sm">Happy Reviews</div>
             </div>
             <div className="text-center">
               <div className="font-bebas text-3xl text-martial-red">
-                <AnimatedCounter end={98} suffix="%" />
+                <AnimatedCounter end={95} suffix="%" />
               </div>
               <div className="text-sm">Student Retention</div>
             </div>

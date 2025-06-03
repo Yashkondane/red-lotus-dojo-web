@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Preloader from "./components/Preloader";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
@@ -49,6 +50,7 @@ const App = () => {
               </Routes>
             </main>
             <Footer />
+            <WhatsAppButton />
           </div>
         </BrowserRouter>
       </TooltipProvider>
