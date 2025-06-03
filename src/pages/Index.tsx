@@ -2,6 +2,7 @@
 import Hero from '@/components/Hero';
 import Services from '@/components/Services';
 import Programs from '@/components/Programs';
+import StudentAchievements from '@/components/StudentAchievements';
 import Testimonials from '@/components/Testimonials';
 
 const Index = () => {
@@ -10,6 +11,7 @@ const Index = () => {
       <Hero />
       <Services />
       <Programs />
+      <StudentAchievements />
       <Testimonials />
     </div>
   );
