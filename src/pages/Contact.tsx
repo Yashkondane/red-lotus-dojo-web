@@ -194,13 +194,80 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Map Placeholder */}
-              <div className="bg-gray-200 rounded-lg h-64 flex items-center justify-center">
-                <div className="text-center text-gray-500">
-                  <MapPin className="w-12 h-12 mx-auto mb-2" />
-                  <p>Interactive Map Coming Soon</p>
-                </div>
+              {/* Interactive Map */}
+              <div className="bg-gray-200 rounded-lg h-64 overflow-hidden shadow-lg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4442906903995!2d-74.00597268459418!3d40.71278107932681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a316e18a4ad%3A0x64b68b3a9e82b850!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sus!4v1652901743992!5m2!1sen!2sus"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Elite Martial Arts Location"
+                  className="rounded-lg"
+                ></iframe>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Actions Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="font-bebas text-3xl text-martial-red mb-4 tracking-wider">
+              QUICK ACTIONS
+            </h2>
+            <p className="text-gray-600 max-w-2xl mx-auto">
+              Get started quickly with these convenient options
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-martial-red rounded-full flex items-center justify-center mx-auto mb-4">
+                <Phone className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">Call Us Now</h3>
+              <p className="text-gray-600 mb-4">Speak directly with our team</p>
+              <a 
+                href="tel:+15551234567" 
+                className="inline-block bg-martial-red text-white px-6 py-2 rounded-md font-medium hover:bg-martial-red-dark transition-colors"
+              >
+                (555) 123-4567
+              </a>
+            </div>
+
+            <div className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-martial-red rounded-full flex items-center justify-center mx-auto mb-4">
+                <Mail className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">Email Us</h3>
+              <p className="text-gray-600 mb-4">Send us your questions</p>
+              <a 
+                href="mailto:info@elitemartialarts.com" 
+                className="inline-block bg-martial-red text-white px-6 py-2 rounded-md font-medium hover:bg-martial-red-dark transition-colors"
+              >
+                Send Email
+              </a>
+            </div>
+
+            <div className="text-center p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+              <div className="w-16 h-16 bg-martial-red rounded-full flex items-center justify-center mx-auto mb-4">
+                <MapPin className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-2">Visit Us</h3>
+              <p className="text-gray-600 mb-4">Come see our facilities</p>
+              <a 
+                href="https://maps.google.com/?q=123+Warrior+Street,+Fitness+City,+FC+12345" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-martial-red text-white px-6 py-2 rounded-md font-medium hover:bg-martial-red-dark transition-colors"
+              >
+                Get Directions
+              </a>
             </div>
           </div>
         </div>
