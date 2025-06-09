@@ -1,5 +1,6 @@
 
 import { Shield, Target, Users } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Services = () => {
   const services = [
@@ -7,19 +8,22 @@ const Services = () => {
       icon: Shield,
       title: 'Karate Training',
       description: 'Traditional Shotokan Karate training focusing on discipline, technique, and character development. Perfect for all ages and skill levels.',
-      features: ['Traditional Forms (Kata)', 'Self-Defense Techniques', 'Physical Conditioning', 'Mental Discipline']
+      features: ['Traditional Forms (Kata)', 'Self-Defense Techniques', 'Physical Conditioning', 'Mental Discipline'],
+      link: '/karate-training'
     },
     {
       icon: Target,
-      title: 'Martial Arts Programs',
-      description: 'Comprehensive martial arts programs designed to build confidence, strength, and flexibility while learning ancient combat techniques.',
-      features: ['Mixed Martial Arts', 'Weapons Training', 'Competition Prep', 'Fitness Integration']
+      title: 'Taekwondo Training',
+      description: 'Olympic-style Taekwondo focusing on high kicks, flexibility, and dynamic movements. Build agility and competitive skills.',
+      features: ['High Kicks & Footwork', 'Olympic Competition', 'Flexibility Training', 'Board Breaking'],
+      link: '/taekwondo-training'
     },
     {
       icon: Users,
-      title: 'Martial Arts Training',
-      description: 'Personalized training sessions and group classes that cater to individual goals and fitness levels for maximum results.',
-      features: ['Personal Training', 'Group Classes', 'Youth Programs', 'Adult Classes']
+      title: 'MMA Training',
+      description: 'Complete mixed martial arts training combining striking, grappling, and ground fighting for the ultimate combat experience.',
+      features: ['Striking & Boxing', 'Wrestling & Grappling', 'Ground Fighting', 'Fight Conditioning'],
+      link: '/mma-training'
     }
   ];
 
@@ -54,7 +58,7 @@ const Services = () => {
                 {service.description}
               </p>
               
-              <ul className="space-y-2">
+              <ul className="space-y-2 mb-6">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center text-gray-700">
                     <div className="w-2 h-2 bg-martial-red rounded-full mr-3"></div>
@@ -63,9 +67,12 @@ const Services = () => {
                 ))}
               </ul>
               
-              <button className="mt-6 w-full bg-martial-red text-white py-3 rounded-md font-medium hover:bg-martial-red-dark transition-colors">
+              <Link
+                to={service.link}
+                className="block w-full bg-martial-red text-white py-3 rounded-md font-medium hover:bg-martial-red-dark transition-colors text-center"
+              >
                 Learn More
-              </button>
+              </Link>
             </div>
           ))}
         </div>

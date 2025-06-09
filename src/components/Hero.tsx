@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 import AnimatedCounter from './AnimatedCounter';
 
 const Hero = () => {
+  const handleWatchDemo = () => {
+    window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
+  };
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background with gradient overlay */}
@@ -39,7 +43,10 @@ const Hero = () => {
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             
-            <button className="group inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold text-lg rounded-md hover:bg-white hover:text-martial-red transition-all duration-300">
+            <button 
+              onClick={handleWatchDemo}
+              className="group inline-flex items-center px-8 py-4 border-2 border-white text-white font-bold text-lg rounded-md hover:bg-white hover:text-martial-red transition-all duration-300"
+            >
               <Play className="mr-2 w-5 h-5" />
               Watch Demo
             </button>
@@ -49,19 +56,19 @@ const Hero = () => {
           <div className="grid grid-cols-3 gap-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '1200ms' }}>
             <div className="text-center">
               <div className="font-bebas text-3xl md:text-4xl text-white">
-                <AnimatedCounter end={750} suffix="+" />
+                <AnimatedCounter end={1200} suffix="+" />
               </div>
               <div className="text-gray-300 text-sm uppercase tracking-wide">Students</div>
             </div>
             <div className="text-center">
               <div className="font-bebas text-3xl md:text-4xl text-white">
-                <AnimatedCounter end={18} suffix="+" />
+                <AnimatedCounter end={25} suffix="+" />
               </div>
               <div className="text-gray-300 text-sm uppercase tracking-wide">Years Experience</div>
             </div>
             <div className="text-center">
               <div className="font-bebas text-3xl md:text-4xl text-white">
-                <AnimatedCounter end={15} suffix="+" />
+                <AnimatedCounter end={20} suffix="+" />
               </div>
               <div className="text-gray-300 text-sm uppercase tracking-wide">Expert Instructors</div>
             </div>

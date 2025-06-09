@@ -14,6 +14,9 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import Events from "./pages/Events";
+import KarateTraining from "./pages/KarateTraining";
+import TaekwondoTraining from "./pages/TaekwondoTraining";
+import MMATraining from "./pages/MMATraining";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
